@@ -11,5 +11,5 @@ A bunch of python programs that can be used to learn pyhton from basic to advanc
 
 ## Author
 
-- [@Raj Bhattacharyya](https://github.com/RajBhattacharyya)
+- [@Kittycat58](https://github.com/Kittycat58)
 
