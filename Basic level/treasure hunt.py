@@ -1,3 +1,7 @@
+# Import the time module to create a delay effect for a better user experience.
+import time
+
+# ASCII art intro
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -20,19 +24,30 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+
+# Welcome message
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
 while True:
-    direction=input("You're at a crossroad. Where do you want to go? Type 'left' or 'right' ")
-    if direction=="left":
-        water=input("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across ")
-        if water=="wait":
-            door=input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ")
-            if door=="red":
+    # User chooses a direction
+    direction = input("You're at a crossroad. Where do you want to go? Type 'left' or 'right': ")
+    
+    if direction == "left":
+        # User encounters a lake
+        water = input("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat or 'swim' to swim across: ")
+
+        if water == "wait":
+            # User reaches the island safely
+            door = input("You arrive at the island unharmed. There is a house with 3 doors: one red, one yellow, and one blue. Which color do you choose? ")
+
+            if door == "red":
                 print("It's a room full of fire. Game Over.")
-            elif door=="yellow":
-                print("You found the treasure! You Win!")
-            elif door=="blue":
+            elif door == "yellow":
+                # User finds the treasure and wins
+                print("Congratulations! You found the treasure. You Win!")
+                break
+            elif door == "blue":
                 print("You enter a room of beasts. Game Over.")
             else:
                 print("You chose a door that doesn't exist. Game Over.")
@@ -40,10 +55,9 @@ while True:
             print("You get attacked by an angry trout. Game Over.")
     else:
         print("You fell into a hole. Game Over.")
-    choice=input("Want to play again? yes or no? ")
-    if choice=="yes":
-        continue
-    else:
-        break
 
-        
+    # Ask the user if they want to play again
+    choice = input("Do you want to play again? Type 'yes' or 'no': ")
+    if choice.lower() != "yes":
+        print("Thanks for playing. Goodbye!")
+        break
