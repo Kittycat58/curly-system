@@ -1,6 +1,7 @@
 # Python Programs from Basic to Advance
+![Untitled design (1)](https://github.com/tonima26122004/curly-system/assets/113163028/79c6c4fe-cf69-4d6b-960e-2ad2b2997815)
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
 
 ## Introduction
 
