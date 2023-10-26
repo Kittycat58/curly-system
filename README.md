@@ -51,6 +51,6 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 
 We would like to express our gratitude to the Python community and open-source contributors for making this repository possible.
 
-Feel free to explore the programs, learn, and contribute to this growing collection of Python code. Happy coding! 🐍🚀
+Feel free to explore the programs, learn, and contribute to this growing collection of Python code. Happy coding! 🐍
 
-If you need any further assistance or have questions, please don't hesitate to reach out to us. Happy coding! 🐍🚀
+If you need any further assistance or have questions, please don't hesitate to reach out to us. Happy coding! 🐍
