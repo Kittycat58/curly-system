@@ -14,11 +14,11 @@ def calculator(first_num,sec_num,operator):
         result = first_num / sec_num
     return result
 
-first_num = float(input("What's the first number?: "))
+first_num = eval(input("What's the first number?: "))
 while True:
     print("+\n-\n*\n/")
     operator = input("Pick an operator: ")
-    sec_num = float(input("What's the next number?: "))
+    sec_num = eval(input("What's the next number?: "))
     result = calculator(first_num, sec_num, operator)
     print(f"{first_num} {operator} {sec_num} = {result}")
     choice = input(f"Type 'y' to continue with {result}, type 'n' to start a new calculation, or type anything else to exit: ")
@@ -28,7 +28,7 @@ while True:
     elif choice == "n":
         clear()
         print(logo)
-        first_num = float(input("What's the first number?: "))
+        first_num = eval(input("What's the first number?: "))
         continue
     else:
         break
